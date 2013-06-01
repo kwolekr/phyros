@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6" />
+	<Project>
+		<Option title="phyros" />
+		<Option makefile_is_custom="1" />
+		<Option pch_mode="2" />
+		<Option compiler="gcc" />
+		<MakeCommands>
+			<Build command="gmake all" />
+			<CompileFile command="gmake $file" />
+			<Clean command="gmake clean" />
+			<DistClean command="$make -f $makefile distclean$target" />
+			<AskRebuildNeeded command="gmake -q -f $makefile $target" />
+			<SilentBuild command="gmake -s -f $makefile $target" />
+		</MakeCommands>
+		<Build>
+			<Target title="Win32 Release">
+				<Option output="/usr/home/ryan/Desktop/projects/brewbot/brewbot" prefix_auto="0" extension_auto="0" />
+				<Option object_output="Release" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-O2" />
+					<Add option="-W" />
+					<Add option="-fexceptions" />
+					<Add option="-DWIN32" />
+					<Add option="-DNDEBUG" />
+					<Add option="-D_CONSOLE" />
+					<Add option="-D_MBCS" />
+				</Compiler>
+			</Target>
+			<Target title="Win32 Debug">
+				<Option output="brewbot" prefix_auto="1" extension_auto="1" />
+				<Option object_output="Debug" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-W" />
+					<Add option="-g" />
+					<Add option="-fexceptions" />
+					<Add option="-DWIN32" />
+					<Add option="-D_DEBUG" />
+					<Add option="-D_CONSOLE" />
+					<Add option="-D_MBCS" />
+				</Compiler>
+			</Target>
+		</Build>
+		<Compiler>
+			<Add option="-Wno-multichar" />
+			<Add option="-masm=intel" />
+		</Compiler>
+		<Linker>
+			<Add library="libbncsutil" />
+			<Add library="libgmp" />
+			<Add library="libmd" />
+			<Add library="libz" />
+			<Add library="libpthread" />
+		</Linker>
+		<Unit filename="src/access.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="src/access.h" />
+		<Unit filename="src/asmbits.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="src/asmbits.h" />
+		<Unit filename="src/banning.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="src/banning.h" />
+		<Unit filename="src/blacklist.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="src/blacklist.h" />
+		<Unit filename="src/cdkeymgmt.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="src/cdkeymgmt.h" />
+		<Unit filename="src/chat.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="src/chat.h" />
+		<Unit filename="src/clan.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="src/clan.h" />
+		<Unit filename="src/commands.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="src/commands.h" />
+		<Unit filename="src/config.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="src/config.h" />
+		<Unit filename="src/connection.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="src/connection.h" />
+		<Unit filename="src/crypto/cdkey.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="src/crypto/cdkey.h" />
+		<Unit filename="src/crypto/checkrevision.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="src/crypto/checkrevision.h" />
+		<Unit filename="src/crypto/srp.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="src/crypto/srp.h" />
+		<Unit filename="src/fxns.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="src/fxns.h" />
+		<Unit filename="src/hashtable.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="src/hashtable.h" />
+		<Unit filename="src/main.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="src/main.h" />
+		<Unit filename="src/malloc.c.h" />
+		<Unit filename="src/nedmalloc.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="src/nedmalloc.h" />
+		<Unit filename="src/packets.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="src/packets.h" />
+		<Unit filename="src/pbuffer.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="src/pbuffer.h" />
+		<Unit filename="src/phrase.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="src/phrase.h" />
+		<Unit filename="src/plugins.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="src/plugins.h" />
+		<Unit filename="src/queue.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="src/queue.h" />
+		<Unit filename="src/radix.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="src/radix.h" />
+		<Unit filename="src/timer.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="src/timer.h" />
+		<Unit filename="src/update.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="src/update.h" />
+		<Unit filename="src/vector.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="src/vector.h" />
+		<Unit filename="src/warden.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="src/warden.h" />
+		<Unit filename="src/wildcard.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="src/wildcard.h" />
+		<Unit filename="src/winal.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="src/winal.h" />
+		<Extensions>
+			<code_completion />
+			<debugger />
+			<envvars />
+		</Extensions>
+	</Project>
+</CodeBlocks_project_file>

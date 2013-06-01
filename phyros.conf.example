@@ -1,0 +1,57 @@
+#
+# === Phyros main configuration ===
+#
+
+cfg main {
+	bnet_server     = useast.battle.net
+	bnet_port	= 6112
+	bnls_server  	= bnls.valhallalegends.net
+	bnls_port	= 9367
+
+	home        	= Default Channel
+	owner       	= foo@USEast
+	masters     	= bar@USEast, baz@USEast
+	usebnls     	= 0
+	forceproxy  	= 0
+	ipban       	= 0
+	war3_verbyte 	= 1A
+
+	war3.exe    	= hashes/WAR3/war3.exe
+	storm.dll   	= hashes/WAR3/storm.dll
+	game.dll    	= hashes/WAR3/game.dll
+
+	update_site  	= darkblizz.org
+	update_file     = /phyros/version.php
+	checkupdates    = 1
+	processpriority = 3
+
+	flood_tick	= 700
+	flood_numticks	= 5
+	flood_over 	= 10000
+
+	kickbancount    = 4
+	baninterval	= 4500
+	loadbandelay    = 1000
+
+	queue_ms_perpkt      = 600
+	queue_ms_perbyte     = 30
+	queue_bytes_overhead = 65
+}
+
+cfg prof 0 {
+	user        = Bot-0
+	pass        = password
+	cdkey       = E46CYZV87CXJ4MDC4XFXKBC968
+	trigger	    = ~
+	useproxy    = 0
+	autoconnect = 0
+}
+
+cfg prof 1 {
+	user        = Bot-1
+	pass        = password
+	cdkey       = E86DYHV47CXEEMDC4XFZJBC265
+	trigger	    = !
+	useproxy    = 0
+	autoconnect = 0
+}

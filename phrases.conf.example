@@ -1,0 +1,8 @@
+#
+# === Phyros banned phrases list ===
+#
+# Format:  <action> <"phrase"> [reason]
+
+kick "fizzbuzz" this phrase is annoying
+kick "bloop"
+ban "blurp" this is offensive

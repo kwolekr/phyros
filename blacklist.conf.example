@@ -1,0 +1,17 @@
+#
+# === Phyros user blacklist ===
+#
+# Format:  <blacklist type> <wc3 rel. username> [added by] [reason]
+# Blacklist types:
+#   S - Shitlist - ban for a specific matching username, case insensitive
+#   K - Kicklist - kick for a specific matching username on first join
+#   T - Tagban   - ban for any username matching a wildcard pattern
+#   C - Clanban  - ban for any wc3 user matching a specific clan
+
+S foo@USEast bar@USEast 
+S fooo@USEast
+K fooo bar@USEast
+C RH
+T *[tg]
+T raid* foo@USEast
+T *dfgh* foo@USEast incessant spamming

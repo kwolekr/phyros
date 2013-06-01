@@ -1,0 +1,8 @@
+#
+# === Phyros user access list ===
+#
+# Format:  <wc3 rel. username> <access amount>
+
+example@USEast 40
+username@realm 20
+norealmforwc3 50

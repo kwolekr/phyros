@@ -1,0 +1,9 @@
+8 ScrollWindowEx
+1 DestroyIcon
+1 GetDC
+2 CharUpperBuffA
+1 IsCharUpperA
+4 DefWindowProcA
+1 IsMenu
+1 RegisterClass
+12 CreateWindowExA
